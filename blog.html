@@ -1,64 +1,22 @@
 ---
 layout: default
 ---
-      <div class="row">
-     
+      <div class="row page-content">
          
         <div class="large-9 columns" role="content">
      
+          {% for post in site.posts %}     
           <article>
+            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            <p class="intro">Posted on {{ post.date | date_to_string }} in {{ post.categories }}</p>
      
-            <h3><a href="#">Blog Post Title</a></h3>
-            <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
-     
-            <div class="row">
-              <div class="large-6 columns">
-                <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-                <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-              </div>
-              <div class="large-6 columns">
-                <img src="http://placehold.it/400x240&text=[img]"/>
-              </div>
-            </div>
-     
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-     
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+            {{ post.excerpt }}
      
           </article>
-     
-          <hr/>
-     
-          <article>
-     
-            <h3><a href="#">Blog Post Title</a></h3>
-            <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
-     
-            <div class="row">
-              <div class="large-6 columns">
-                <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-                <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-              </div>
-              <div class="large-6 columns">
-                <img src="http://placehold.it/400x240&text=[img]"/>
-              </div>
-            </div>
-     
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-     
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-     
-          </article>
+          {% endfor %}
      
         </div>
-     
-         
-     
-     
-         
-     
         <aside class="large-3 columns">
-     
           <h5>Categories</h5>
           <ul class="side-nav">
             <li><a href="#">News</a></li>
@@ -93,13 +51,10 @@ layout: default
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
+                {% include navbar-top-right.html %}
               </ul>
             </div>
           </div>
         </div>
       </footer>
-    
+      {% include page-background.html %} 

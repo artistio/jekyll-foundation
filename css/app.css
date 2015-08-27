@@ -15,6 +15,14 @@
     padding: 2em;
 }
 
+.page-content {
+    background: #FFF none repeat scroll 0% 0%;
+    opacity: 0.85;
+    border-radius: 5px;
+    margin: 40px auto 0px;
+    padding: 2em;
+}
+
 h1 {
     font-family: 'Lemon', cursive;
     font-size: 35px;
