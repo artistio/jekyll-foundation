@@ -1,29 +1,9 @@
-# Foundation libsass template
+# Benny's Personal Landing Page
 
-This is a template to start your own project that uses Grunt and libsass!
+This is a working installation of Jekyll engine, used at http://benny.id
 
-## Requirements
-
-You'll need to have the following items installed before continuing.
-
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
-
-## Quickstart
-
-```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
-```
-
-While you're working on your project, run:
-
-`grunt`
-
-And you're set!
-
-## Directory Structure
-
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
+# List of file in _includes
+* `head.html` is everything within <head>..</head> tag in HTML file. Use in layout file
+* `header.html` blog title and top menu. The top menu is included from navbar-top-right.html
+* `google-analytics.html` contains the script used for Google Analytics. Use in layout file
+* `navbar-top-right.html` is the definition of blog title, and top menu. Might be used at bottom menu. Use in another include file: header.html and footer.html
