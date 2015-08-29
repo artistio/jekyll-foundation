@@ -5,7 +5,7 @@ layout: default
          
         <div class="large-9 columns" role="content">
      
-          {% for post in site.posts %}     
+          {% for post in paginator.posts %}     
           <article>
             <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
             <p class="intro">Posted on {{ post.date | date_to_string }} in {{ post.categories }}</p>
@@ -14,6 +14,21 @@ layout: default
      
           </article>
           {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+  {% else %}
+    <span class="previous"><i class="fa fa-arrow-circle-left fa-3x"></i></span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-arrow-circle-right fa-3x"></i></a>
+  {% else %}
+    <span class="next"><i class="fa fa-arrow-circle-right fa-3x"></i></span>
+  {% endif %}
+</div>
      
         </div>
         <aside class="large-3 columns">
