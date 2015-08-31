@@ -16,18 +16,22 @@ layout: default
           {% endfor %}
 
 <!-- Pagination links -->
-<div class="pagination">
+<div class="row">
+  <div class="small-2 columns">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+    <a href="{{ paginator.previous_page_path }}"><i class="fa fa-arrow-circle-left fa-3x left"></i></a>
   {% else %}
-    <span class="previous"><i class="fa fa-arrow-circle-left fa-3x"></i></span>
+    <i class="fa fa-arrow-circle-left fa-3x left"></i>
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </div>
+  <div class="small-8 columns text-center">Page: {{ paginator.page }} of {{ paginator.total_pages }}</div>
+  <div class="small-2 columns">
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-arrow-circle-right fa-3x"></i></a>
+    <a href="{{ paginator.next_page_path }}"><i class="fa fa-arrow-circle-right fa-3x right"></i></a>
   {% else %}
-    <span class="next"><i class="fa fa-arrow-circle-right fa-3x"></i></span>
+    <i class="fa fa-arrow-circle-right fa-3x right"></i>
   {% endif %}
+  </div>
 </div>
      
         </div>
@@ -52,24 +56,4 @@ layout: default
          
       </div>
      
-       
-     
-     
-       
-     
-      <footer class="row">
-        <div class="large-12 columns">
-          <hr/>
-          <div class="row">
-            <div class="large-6 columns">
-              <p>© Copyright no one at all. Go to town.</p>
-            </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-                {% include navbar-top-right.html %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
       {% include page-background.html %} 

@@ -31,6 +31,14 @@ h1 {
     line-height: 110%;
 }
 
+.site-title {
+    font-family: 'Lemon', cursive;
+    font-size: 25px;
+    padding: 10px 0px;
+    color: #CCCCCC;
+    line-height: 100%;
+}
+
 .intro {
     font-family: OpenSansLight,sans-serif;
     font-size: 12px;
@@ -53,8 +61,8 @@ h1 {
 }
 
 a { 
-	font-size: 13px;
-	text-shadow: 0 1px 0 #fff;
+#	font-size: 13px;
+#	text-shadow: 0 1px 0 #fff;
 	color:#444;
 	outline:none;
 	text-decoration: none;
