@@ -2,7 +2,7 @@
 title: Between Two Ears
 email: me@benny.id
 description: > # this means to ignore newlines until "baseurl:"
-  Between Two Ears is a blog by Benny Chandra that contains his thought
+  Between Two Ears is a blog by Benny Chandra that contains his philosophy about parenting, working and life in general
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://benny.id" # the base hostname & protocol for your site
 twitter_username: scalarae

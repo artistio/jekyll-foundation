@@ -68,3 +68,11 @@ a {
 	text-decoration: none;
 }
 a:hover { color:#777; }
+
+footer {
+    background: #FFF none repeat scroll 0% 0%;
+    opacity: 0.85;
+    margin: 40px auto 0px;
+    padding: 2em;
+}
+

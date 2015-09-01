@@ -1,15 +1,53 @@
 ---
 layout: default
 ---
-<div class="post">
+      <div class="row page-content">
+         
+        <div class="large-9 columns" role="content">
+     
+            <a href="{{ page.url }}"><h3>{{ page.title }}</h3></a>
+            <p class="intro">Posted on {{ page.date | date_to_string }} in {{ page.categories }}</p>
+     
+          <article>
+            {{ content }}
+     
+          </article>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<!-- Pagination links -->
+<div class="row">
+  <div class="small-2 columns">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}"><i class="fa fa-arrow-circle-left fa-3x left"></i></a>
+  {% else %}
+    <i class="fa fa-arrow-circle-left fa-3x left"></i>
+  {% endif %}
+  </div>
+  <div class="small-8 columns text-center"></div>
+  <div class="small-2 columns">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}"><i class="fa fa-arrow-circle-right fa-3x right"></i></a>
+  {% else %}
+    <i class="fa fa-arrow-circle-right fa-3x right"></i>
+  {% endif %}
+  </div>
 </div>
+     
+        </div>
+        <aside class="large-3 columns">
+          <h5>Categories</h5>
+          <ul class="side-nav">
+            {% include categories.html %}
+          </ul>
+     
+          <div class="panel">
+            <h5>Featured</h5>
+            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+            <a href="#">Read More →</a>
+          </div>
+     
+        </aside>
+     
+         
+      </div>
+     
+      {% include page-background.html %} 
