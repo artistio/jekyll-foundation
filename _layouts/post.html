@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
       <div class="row page-content">
          
@@ -13,25 +14,20 @@ layout: default
      
           </article>
 
-<!-- Pagination links -->
-<div class="row">
-  <div class="small-2 columns">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}"><i class="fa fa-arrow-circle-left fa-3x left"></i></a>
-  {% else %}
-    <i class="fa fa-arrow-circle-left fa-3x left"></i>
-  {% endif %}
-  </div>
-  <div class="small-8 columns text-center"></div>
-  <div class="small-2 columns">
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}"><i class="fa fa-arrow-circle-right fa-3x right"></i></a>
-  {% else %}
-    <i class="fa fa-arrow-circle-right fa-3x right"></i>
-  {% endif %}
-  </div>
-</div>
-     
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'benny-id';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
         </div>
         <aside class="large-3 columns">
           <h5>Categories</h5>
