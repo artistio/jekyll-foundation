@@ -14,6 +14,22 @@ comments: true
      
           </article>
 
+<!-- Links to next/previous post-->
+<div class="divider"></div>
+<div class="row page-link">
+  <div class="small-4 columns">
+  {% if page.previous.url  %}
+    <a ref="{{ page.previous.url }}"><i class="fa fa-arrow-circle-left fa-3x left"></i>Previous: {{page.previous.title}}</a>
+  {% endif %}
+  </div>
+  <div class="small-4 columns text-center"></div>
+  <div class="small-4 columns">
+  {% if page.next.url %}
+    <a href="{{ page.next.url }}"><i class="fa fa-arrow-circle-right fa-3x right"></i>Next: {{page.next.title}}</a>
+  {% endif %}
+  </div>
+</div>
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
