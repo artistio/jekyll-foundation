@@ -6,9 +6,9 @@ threadsafe: yes
 
 handlers:
 
-- url: /blog/?
-  static_files: _site/blog/index.html
-  upload: _site/blog/index.html
+- url: /(.*)/$
+  static_files: _site/\1/index.html
+  upload: _site/(.*)/index.html
 
 - url: /(.+)
   static_files: _site/\1
