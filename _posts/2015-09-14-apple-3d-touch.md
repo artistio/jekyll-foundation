@@ -14,4 +14,6 @@ But the latest announcement from Apple about the new 3D touch blew my mind. It i
 Many people think that this is similar to Android's long press capability that has been there for some time. Another Apple copying someone else. Well, it is Apple's bad in the demonstration. With the support of additional hardware in iPhone 6, the 3D touch can do much more than Android's long press, something that is missing from the demo.
 
 Think of the use of pressure-sensitive user interface for these things:
+1. For painters, who used to apply different pressure to create different line thickness. This will also apply to those who write Japanese and Chinese.
+2. Pianist, who use different stroke power to create variation in a play. This will be mainly for people who learn to play piano
 
