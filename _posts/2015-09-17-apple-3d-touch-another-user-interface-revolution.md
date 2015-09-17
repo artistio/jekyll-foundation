@@ -2,7 +2,7 @@
 layout: post
 title:  "Apple 3D Touch: Another User Interface Revolution"
 permalink:  /blog/apple-3d-touch-another-user-interface-revolution.html
-date:   2015-09-12
+date:   2015-09-17
 categories: At-Work 
 tags: apple, 3d-touch, bill-gates
 ---
@@ -17,3 +17,6 @@ Think of the use of pressure-sensitive user interface for these things:
 1. For painters, who used to apply different pressure to create different line thickness. This will also apply to those who write Japanese and Chinese.
 2. Pianist, who use different stroke power to create variation in a play. This will be mainly for people who learn to play piano
 
+Not to mention game makers, who are sure to fund better way to play games. The possibility is limitless.
+
+Again, Apple revolutionize the industry, this time in the area of user interface. I wished Apple to do better in their marketing campaign to separate themself from competitors.
