@@ -2,7 +2,7 @@
 layout: post
 title:  "Book Note: Living with a SEAL"
 permalink:  /blog/living-with-a-seal-jessie-itzler.html
-date:   2015-12-01
+date:   2016-01-13
 categories: book-note
 tags: jessie-itzler
 ---
